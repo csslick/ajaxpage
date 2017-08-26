@@ -1,0 +1,2 @@
+# ajaxpage
+ajax page test
