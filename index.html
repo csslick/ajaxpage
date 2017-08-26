@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>home</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+<style>
+	header, main, section, footer{
+		border: 3px solid;
+		padding: 20px;
+	}
+
+</style>
+</head>
+<body>
+<h1>preloaded h1</h1>
+<div id="page">
+	<script>
+		getPage('#page', 'header.html');
+		getPage('#page', 'footer.html');
+	</script>
+</div>
+
+<script>
+	$('body').on('click', 'header > h1', function(){
+		$(this).css('color', 'red');
+	});
+</script>
+</body>
+</html>
